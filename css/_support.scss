@@ -1,0 +1,173 @@
+.support {
+  &-head {
+    font-weight: $normal;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    @include breakpoint-up(md) {
+      font-size: 4rem;
+      padding-bottom: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      font-size: 5rem;
+      padding-bottom: 6rem;
+    }
+    @include breakpoint-up(x-lg) {
+      padding-bottom: 7rem;
+    }
+    &.faint-blue-bg {
+      background: #f2f6f8;
+      @include breakpoint-up(md) {
+        background: transparent;
+      }
+    }
+    &.top-space{
+      @include breakpoint-up(md) {
+        padding-top: 8rem;
+      }
+    }
+  }
+
+  &-body {
+    &-text {
+      flex-basis: 50%;
+      @include breakpoint-down(md) {
+        padding-right: 2rem;
+      }
+      // accordian
+      .acc {
+        overflow: hidden;
+        padding: 0;
+        .logo {
+          height: 3rem;
+          width: 3rem;
+          margin-right: 2rem;
+          @include breakpoint-up(md) {
+            height: 4rem;
+            width: 4rem;
+            margin-right: 3rem;
+          }
+          @include breakpoint-up(lg) {
+            height: 5rem;
+            width: 5rem;
+            margin-right: 3rem;
+          }
+        }
+        h2 {
+          text-align: left;
+          color: #000;
+          font-size: 22px;
+          margin-right: 5rem;
+          font-weight: 400;
+          @include breakpoint-down(lg) {
+            font-size: 20px;
+            margin-right: 4rem;
+          }
+        }
+        li {
+          border-bottom: solid 1px #979797;
+        }
+
+        .acc_ctrl {
+          background: #fff;
+          border: none;
+          cursor: pointer;
+          display: block;
+          outline: none;
+          padding: 2.5rem 0 2.5rem 0;
+          position: relative;
+          width: 100%;
+
+          .icon {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            margin-left: auto;
+            @include breakpoint-down(md) {
+              width: 25px;
+              height: 25px;
+              padding-top: 1px;
+              padding-left: 2px;
+            }
+            @include breakpoint-down(lg) {
+              width: 25px;
+              height: 25px;
+              padding-top: 1px;
+              padding-left: 0px;
+            }
+            svg {
+              transform: rotate(-90deg);
+              transition: 0.3s;
+            }
+          }
+          &.rotate {
+            svg {
+              transform: rotate(0deg);
+            }
+            h2 {
+              color: $text-green;
+            }
+            .icon {
+              @include breakpoint-down(md) {
+                padding-top: 2px;
+                padding-left: 0px;
+              }
+            }
+          }
+        }
+        .acc_ctrl1 {
+          padding: 0 0 2rem 0 !important;
+        }
+
+        .acc_ctrl.active h2,
+        .acc_ctrl:focus h2 {
+          position: relative;
+        }
+        .acc_panel {
+          line-height: 25px;
+          background: $white;
+          display: none;
+          overflow: hidden;
+          color: $text-green;
+          padding-bottom: 3rem;
+          padding-left: 5rem;
+          @include breakpoint-up(md) {
+            padding-left: 7rem;
+          }
+          @include breakpoint-up(lg) {
+            line-height: 34px;
+            padding-left: 8rem;
+          }
+        }
+      }
+    }
+    &-image {
+      flex-basis: 50%;
+      .img-size-1 {
+        @include breakpoint-up(lg) {
+          height: 530px !important;
+        }
+        @include breakpoint-up(md) {
+          height: 430px;
+        }
+      }
+
+      .img-size-2 {
+        @include breakpoint-up(lg) {
+          height: 440px !important;
+        }
+        @include breakpoint-up(md) {
+          height: 460px;
+        }
+      }
+    }
+    .has-bg-yellow {
+      background: #e5a847;
+    }
+
+    .right-icon-arrow {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

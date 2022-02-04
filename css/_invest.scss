@@ -1,0 +1,250 @@
+.invest {
+  position: relative;
+  @include breakpoint-down(md) {
+    flex-direction: row-reverse;
+    background: #04353e;
+  }
+  &_left_box {
+    background: #006778;
+    align-self: flex-start;
+    width: 5rem;
+    height: 5rem;
+    @include breakpoint-up(sm) {
+      width: 6rem;
+      height: 6rem;
+    }
+    @include breakpoint-up(md) {
+      align-self: flex-end;
+      width: 12rem;
+      height: 44rem;
+    }
+    @include breakpoint-up(lg) {
+      height: 45rem;
+    }
+    @include breakpoint-up(x-lg) {
+      height: 43rem;
+      width: 20rem;
+    }
+    @include breakpoint-up(xx-lg) {
+      width: 70rem;
+      height: 80rem;
+    }
+  }
+  &_left-box1 {
+    position: absolute;
+    background-image: url(../images/left-box-1.svg) !important;
+    width: 5rem;
+    @include breakpoint-up(md) {
+      width: 12rem;
+      height: 24.7rem;
+    }
+    @include breakpoint-up(lg) {
+      width: 12rem;
+      height: 29.5rem;
+    }
+    @include breakpoint-up(x-lg) {
+      height: 33rem !important;
+      width: 18.6rem;
+    }
+    .img1 {
+      bottom: 0;
+      position: absolute;
+      height: 120px;
+      width: 120px;
+      @include breakpoint-up(x-lg) {
+        height: 187px;
+        width: 187px;
+      }
+    }
+    .img2 {
+      bottom: 0;
+      right: 0px;
+      position: absolute;
+      height: 75px;
+      width: 75px;
+      @include breakpoint-up(x-lg) {
+        height: 126px;
+        width: 126px;
+      }
+    }
+    .img3 {
+      bottom: 7.5rem;
+      right: 0;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      @include breakpoint-up(x-lg) {
+        bottom: 12.6rem;
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
+  &_template {
+    background: #04353e;
+    position: relative;
+    color: $white;
+    flex-direction: column;
+    overflow: hidden;
+    width: calc(100% - 5rem);
+    @include breakpoint-up(sm) {
+      width: calc(100% - 6rem);
+    }
+    @include breakpoint-up(md) {
+      width: calc(100% - 12rem);
+      flex-direction: row;
+      gap: 2rem;
+    }
+    @include breakpoint-up(lg) {
+      gap: 4rem;
+    }
+    @include breakpoint-up(x-lg) {
+      width: calc(100% - 10rem);
+      gap: 8rem;
+    }
+    @include breakpoint-up(xx-lg) {
+      width: calc(100% - 20rem);
+      gap: 20rem;
+    }
+    .img-box {
+      width: 25rem;
+      height: 25rem;
+      margin: 0 0 0 auto;
+      @include breakpoint-up(sm) {
+        width: 28rem;
+        height: 28rem;
+      }
+      @include breakpoint-up(md) {
+        height: initial;
+        width: initial;
+        margin: 10rem 0 0 0 !important;
+      }
+      @include breakpoint-up(lg) {
+        height: initial;
+        width: initial;
+        margin: auto 0 0 0;
+      }
+      .img {
+        clip-path: polygon(100% 0, 100% 50%, 50% 100%, 50% 50%, 0 49%, 50% 0);
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 5rem;
+        @include breakpoint-up(sm) {
+          top: 6rem;
+        }
+        @include breakpoint-up(md) {
+          width: 30rem;
+          height: 30rem;
+          margin-right: 0;
+          top: initial;
+        }
+        @include breakpoint-up(lg) {
+          width: 40rem;
+          height: 40rem;
+        }
+        @include breakpoint-up(x-lg) {
+          width: 47rem;
+          height: 47rem;
+        }
+        @include breakpoint-up(xx-lg) {
+          width: 70rem;
+          height: 70rem;
+        }
+        img {
+          height: 100%;
+        }
+      }
+    }
+    .carousel {
+      flex-basis: 1;
+      width: 100%;
+      position: relative;
+      bottom: 5rem;
+
+      @include breakpoint-up(md) {
+        width: 50%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        bottom: 0;
+      }
+      @include breakpoint-up(lg) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+      @include breakpoint-up(x-lg) {
+        padding-top: 7rem;
+        padding-bottom: 10rem;
+      }
+      @include breakpoint-up(xx-lg) {
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+      }
+      .item {
+        font-weight: $normal;
+        padding: 0 20px;
+        @include breakpoint-down(md) {
+          padding-top: 5rem;
+        }
+        @include breakpoint-up(md) {
+          padding: 20px;
+        }
+        @include breakpoint-up(x-lg) {
+          padding: 20px 20px 20px 0;
+        }
+        .head {
+          font-size: 3.5rem;
+          @include breakpoint-down(md) {
+            padding-top: 6rem;
+          }
+          @include breakpoint-up(md) {
+            font-size: 4rem;
+          }
+          @include breakpoint-up(lg) {
+            font-size: 5rem;
+          }
+          max-width: 50rem;
+          font-weight: 300;
+          span {
+            font-weight: $bold !important;
+          }
+        }
+        .desc {
+          font-size: 1.6rem;
+          max-width: 42rem;
+          margin-bottom: 8rem;
+          padding-top: 3rem;
+          line-height: 25px;
+          @include breakpoint-up(md) {
+            font-size: 2rem;
+            line-height: 35px;
+          }
+        }
+      }
+
+      .owl-dots {
+        margin: 0;
+        text-align: left;
+        padding-left: 20px;
+        .owl-dot {
+          margin: 0;
+          span {
+            background-color: #304f54;
+          }
+        }
+        .owl-dot.active {
+          height: 0.6rem;
+          width: 5rem;
+          margin-right: 1.4rem;
+          span {
+            width: 100%;
+            background-color: #51b6c7;
+          }
+        }
+      }
+    }
+  }
+}

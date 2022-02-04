@@ -1,0 +1,284 @@
+.our-team {
+  .content-wrapper {
+    padding-top: 13rem;
+    @include breakpoint-up(md) {
+      padding-top: 17rem;
+    }
+    background-color: #f2f6f8;
+    position: relative;
+    .banner-content {
+      color: #151515;
+      position: relative;
+      .banner-container {
+        @include breakpoint-up(lg) {
+          gap: 8rem;
+        }
+        @include breakpoint-up(md) {
+          gap: 5rem;
+          display: flex;
+        }
+        .banner-icon {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 340px;
+          height: 228px;
+          @include breakpoint-up(md) {
+            width: 179px;
+            height: 120px;
+          }
+        }
+        .heading-text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 4rem;
+          padding-top: 0rem;
+          padding-bottom: 3rem;
+          @include breakpoint-up(md) {
+            font-size: 5rem;
+          }
+          @include breakpoint-up(lg) {
+            font-size: 5rem;
+          }
+        }
+        .text-content {
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.8rem;
+          width: 100%;
+          line-height: 30px;
+          padding-bottom: 3rem;
+          @include breakpoint-up(md) {
+            font-size: 2rem;
+            width: 58%;
+            line-height: 35px;
+          }
+          @include breakpoint-up(lg) {
+            font-size: 2.5rem;
+            width: 60%;
+            line-height: 40px;
+            padding-bottom: 15rem;
+          }
+        }
+        .down-arrow-section {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          gap: 37px;
+          font-size: 2rem !important;
+          color: #111;
+          padding-bottom: 5rem;
+          img {
+            width: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.img-container {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+
+  @include breakpoint-up(x-lg) {
+    height: 38rem;
+  }
+
+  .img {
+    flex: 1;
+    height: 100%;
+    // margin: 1px;
+    transition: all 0.4s ease-in;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    &:hover {
+      flex: 2.5;
+    }
+
+    .desc {
+      position: absolute;
+      bottom: 10%;
+      left: 0%;
+      opacity: 0;
+      // transform: translateX(-100%);
+      padding: 3rem;
+      background: rgba(43, 137, 153, 0.5);
+      color: #fff;
+      .name {
+        font-size: 2rem;
+        font-weight: $bold;
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
+      }
+      .role {
+        font-size: 1.6rem;
+        font-weight: $bold;
+      }
+      .small-icon {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: -25px;
+        top: 0;
+        background: #2567B3;
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+    &:hover .desc {
+      opacity: 1;
+      transform: translateX(0);
+      transition: 0.8s;
+      transition-delay: 500ms;
+    }
+  }
+  // .is-active-img{
+  //     -webkit-box-flex: 2.5;
+  //     -ms-flex: 2.5;
+  //     flex: 2.5;
+  //      .desc {
+  //         opacity: 1;
+  //         -webkit-transform: translateX(0);
+  //         transform: translateX(0);
+  //     }
+  // }
+
+  .img1 {
+    background-image: url("../images/our-team/slider-images/rohini_prakash.png");
+  }
+
+  .img2 {
+    background-image: url("../images/our-team/slider-images/rahul_saha.png");
+  }
+
+  .img3 {
+    background-image: url("../images/our-team/slider-images/piyush_surana.png");
+  }
+
+  .img4 {
+    background-image: url("../images/our-team/slider-images/alan_james.png");
+  }
+
+  .img5 {
+    background-image: url("../images/our-team/slider-images/ankur_shah.png");
+  }
+
+  .img6 {
+    background-image: url("../images/our-team/slider-images/aditya_singh.png");
+  }
+
+  .img7 {
+    background-image: url("../images/our-team/slider-images/yash_dholakia.png");
+  }
+
+  .img8 {
+    background-image: url("../images/our-team/slider-images/arun_kumar.png");
+  }
+}
+
+.carousel-for-mobile {
+  .item {
+    height: 21.5rem;
+    position: relative;
+    .image {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+
+    .desc {
+      width: 80%;
+      position: absolute;
+      padding: 1.2rem;
+      background: rgba(43, 137, 153, 0.5);
+      color: #fff;
+      bottom: 8%;
+      .name {
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: $bold;
+        padding-bottom: 0.5rem;
+      }
+      .role {
+        font-size: 1rem;
+        font-weight: $normal;
+      }
+      .small-icon {
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        right: -22px;
+        top: 0;
+        background: #2567B3;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.carousel-box {
+  position: relative;
+  .cloned:last-child {
+    display: none;
+  }
+  background-color: #f2f6f8;
+  padding-bottom: 10rem;
+  @include breakpoint-up(lg) {
+    background-color: #fff;
+    padding-bottom: 0rem;
+  }
+  .slider_nav {
+    position: relative;
+    text-align: right;
+    bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    @include breakpoint-up(lg) {
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+    }
+    .btn-prev,
+    .btn-next {
+      border: none;
+      padding: 0;
+      height: 2.2rem;
+      width: 1rem;
+      cursor: pointer;
+      @include breakpoint-up(lg) {
+        height: 2.8rem;
+        width: 1.5rem;
+      }
+      @include breakpoint-up(x-lg) {
+        height: 3.2rem;
+        width: 1.8rem;
+      }
+    }
+    .btn-prev {
+      margin-right: 3rem;
+      @include breakpoint-up(x-lg) {
+        margin-right: 6rem;
+      }
+    }
+  }
+  .banner-icon-mob {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 93px;
+    height: 62px;
+  }
+}
+.owl-stage-outer .owl-stage {
+  height: auto;
+}
+.acc_panel {
+  display: none;
+}

@@ -1,0 +1,159 @@
+.our-vision {
+  .content-wrapper {
+    padding-top: 12rem;
+    position: relative;
+    @include breakpoint-down(md) {
+      padding-top: 11.8rem;
+    }
+    &-image {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &::before {
+      content: "";
+      background: #151515;
+      opacity: 0.85;
+      mix-blend-mode: hard-light;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .banner-content {
+      color: #fff;
+      position: relative;
+      .left-arrow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        @include breakpoint-up(md) {
+          width: 195px;
+          height: 194px;
+        }
+      }
+      .right-arrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        @include breakpoint-up(md) {
+          width: 180px;
+          height: 180px;
+        }
+        @include breakpoint-up(lg) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+        @include breakpoint-up(md) {
+          font-size: 5rem;
+          padding-bottom: 4rem;
+          padding-top: 6rem;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 5rem;
+          padding-bottom: 4rem;
+          padding-top: 8rem;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.8rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        line-height: 25px;
+        @include breakpoint-up(md) {
+          font-size: 2rem;
+          padding-bottom: 8rem;
+          width: 90%;
+          line-height: 40px;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 2.5rem;
+          width: 85%;
+          padding-bottom: 14rem;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+}
+
+.we-work {
+  .acc-we-work {
+    overflow: hidden;
+    padding: 0;
+
+    .right-space {
+      padding-right: 1.8rem;
+      @include breakpoint-up(lg) {
+        padding-right: 3.6rem;
+      }
+    }
+
+    h2 {
+      text-align: left;
+      color: #333333;
+      font-size: 2rem;
+      font-weight: 400;
+      @include breakpoint-up(md) {
+        font-size: 2.2rem;
+      }
+    }
+    li:not(:last-child) {
+      border-bottom: solid 1px #979797;
+    }
+
+    .acc_ctrl {
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      display: block;
+      outline: none;
+      padding: 2.5rem 0 2.5rem 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .acc_ctrl.active h2,
+    .acc_ctrl:focus h2 {
+      position: relative;
+    }
+    .acc_panel {
+      line-height: 25px;
+      font-size: 1.6rem;
+      background: $white;
+      display: none;
+      overflow: hidden;
+      color: #333333;
+      padding-bottom: 3rem;
+      padding-left: 4.7rem;
+      @include breakpoint-up(md) {
+        padding-left: 5.5rem;
+      }
+      @include breakpoint-up(lg) {
+        padding-left: 6.5rem;
+        line-height: 32px;
+        // font-size: 2rem;
+      }
+      &.is-active {
+        display: block;
+      }
+    }
+  }
+}

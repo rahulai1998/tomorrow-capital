@@ -1,0 +1,390 @@
+.our-companies {
+  .content-wrapper {
+    padding-top: 13rem;
+    @include breakpoint-up(md) {
+      padding-top: 15rem;
+    }
+    background-color: #f2f6f8;
+    position: relative;
+
+    .banner-container {
+      @include breakpoint-down(md) {
+        text-align: left;
+      }
+      text-align: center;
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+        @include breakpoint-up(md) {
+          font-size: 5rem;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.8rem;
+        width: 100%;
+        line-height: 30px;
+        padding-bottom: 3rem;
+        margin: auto;
+        @include breakpoint-up(md) {
+          font-size: 2rem;
+          width: 90%;
+          line-height: 35px;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 2.5rem;
+          width: 85%;
+          line-height: 40px;
+          padding-bottom: 6rem;
+        }
+      }
+    }
+    .banner_logo {
+      padding-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding-bottom: 6rem;
+      @include breakpoint-up(md) {
+        padding-top: 0rem;
+        gap: 3rem;
+        padding-bottom: 8rem;
+      }
+      @include breakpoint-up(lg) {
+        gap: 4rem;
+      }
+      @include breakpoint-up(x-lg) {
+        gap: 6rem;
+      }
+      .flex-basis-1 {
+        flex-basis: 80%;
+        text-align: center;
+        @include breakpoint-up(md) {
+          flex-basis: 30%;
+        }
+        @include breakpoint-up(x-lg) {
+          flex-basis: 25%;
+        }
+      }
+      // .img1 {
+      //   @include breakpoint-up(lg) {
+      //     width: 210px;
+      //   }
+      //   @include breakpoint-down(md) {
+      //     width: 140px;
+      //   }
+      // }
+      // .img2 {
+      //   @include breakpoint-up(lg) {
+      //     width: 70px;
+      //   }
+      //   @include breakpoint-down(md) {
+      //     width: 50px;
+      //   }
+      // }
+      // .img3 {
+      //   @include breakpoint-up(lg) {
+      //     width: 160px;
+      //   }
+      //   @include breakpoint-down(md) {
+      //     width: 95px;
+      //   }
+      // }
+    }
+    .bottom-space {
+      padding-bottom: 5rem;
+      @include breakpoint-up(md) {
+        padding-bottom: 0rem;
+      }
+    }
+  }
+}
+
+// CSS for card structure
+.card-section {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background: #f2f6f8;
+  @include breakpoint-up(md) {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    background-color: transparent;
+  }
+  .col-wrapper {
+    .col-1 {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-up(md) {
+        flex-direction: row;
+      }
+    }
+    .col-2 {
+      display: flex;
+      flex-direction: column-reverse;
+      @include breakpoint-up(md) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .fourth-cell,
+  .first-cell {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    .card-1 {
+      height: 100%;
+      img {
+        height: 100% !important;
+        object-fit: fill !important;
+      }
+    }
+  }
+
+  .second-cell {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    background-color: #fff;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include breakpoint-up(lg) {
+      padding-top: 6rem;
+      padding-left: 6rem;
+      padding-right: 5rem;
+    }
+
+    &.top-gap {
+      padding-top: 4rem !important;
+      @include breakpoint-up(lg) {
+        padding-top: 7rem !important;
+      }
+    }
+    .leverage-logo {
+      width: 120px;
+      height: 70px;
+      margin-bottom: 2rem;
+      @include breakpoint-up(lg) {
+        width: 180px;
+        height: 110px;
+      }
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 2rem;
+      @include breakpoint-up(lg) {
+        width: 250px;
+      }
+    }
+    .card-info {
+      .desc {
+        color: #202020;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 25px;
+        @include breakpoint-up(lg) {
+          font-size: 2rem;
+          line-height: 35px;
+        }
+      }
+
+      .head {
+        padding-top: 2rem;
+        color: #04353e;
+        line-height: 35px;
+        font-size: 2rem;
+        font-weight: 600;
+        @include breakpoint-up(lg) {
+          padding-top: 4rem;
+        }
+      }
+      .icon-wrapper {
+        @include breakpoint-up(lg) {
+          display: flex;
+        }
+      }
+      .icon-1 {
+        display: flex;
+        align-items: center;
+        margin-top: 2.6rem;
+        @include breakpoint-up(lg) {
+          margin-right: 10rem;
+        }
+        .icon {
+          width: 22px;
+          // height: 32px;
+          font-weight: 500;
+          margin-right: 2.5rem;
+        }
+        p {
+          color: #5e5e5e;
+          font-size: 1.8rem;
+          font-style: normal;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .third-cell {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    background-color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    margin-top: -5px;
+    @include breakpoint-up(md) {
+      margin-top: 7rem;
+      padding-top: 0rem;
+      padding-bottom: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      padding-left: 6rem;
+      padding-right: 5rem;
+      padding-bottom: 10rem;
+    }
+    .icon-wrapper {
+      @include breakpoint-up(lg) {
+        display: flex;
+      }
+    }
+    .logo {
+      width: 100px;
+      margin-bottom: 2rem;
+      @include breakpoint-up(lg) {
+        width: 180px !important;
+        margin-bottom: 4rem;
+      }
+    }
+    .logo-1 {
+      width: 150px;
+      margin-bottom: 2rem;
+      @include breakpoint-up(lg) {
+        width: 230px !important;
+        margin-bottom: 4rem;
+      }
+    }
+    .card-info {
+      .desc {
+        color: #202020;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 25px;
+        @include breakpoint-up(lg) {
+          font-size: 2rem;
+          line-height: 35px;
+        }
+      }
+
+      .head {
+        padding-top: 4rem;
+        color: #04353e;
+        line-height: 35px;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .bottom-space {
+        padding-bottom: 3rem;
+        @include breakpoint-up(md) {
+          padding-bottom: 0rem;
+        }
+      }
+      .icon-1 {
+        display: flex;
+        align-items: center;
+        margin-top: 2.6rem;
+        @include breakpoint-up(lg) {
+          margin-right: 10rem;
+        }
+        .icon {
+          width: 22px;
+          // height: 32px;
+          font-weight: 500;
+          margin-right: 2.5rem;
+        }
+        p {
+          color: #5e5e5e;
+          font-size: 1.8rem;
+          font-style: normal;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .fourth-cell {
+    margin-top: 4rem;
+    @include breakpoint-up(md) {
+      margin-top: 0rem;
+    }
+  }
+
+  .top-cell-gap {
+    margin-top: 4rem;
+    @include breakpoint-up(md) {
+      margin-top: 0rem;
+    }
+  }
+  .mob-gap {
+    @include breakpoint-down(md) {
+      margin-bottom: -4px;
+    }
+  }
+  .m-b-0 {
+    @include breakpoint-up(lg) {
+      margin-bottom: 0px !important;
+    }
+  }
+  .btn-wrapper {
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+    @include breakpoint-up(lg) {
+      margin-top: 5rem;
+      margin-bottom: 7rem;
+    }
+    .btn {
+      background: #2b8999;
+      color: #fff;
+      border: 1px solid #2b8999;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      @include breakpoint-up(md) {
+        font-size: 16px;
+      }
+      @include breakpoint-up(lg) {
+        font-size: 20px;
+      }
+      &:hover {
+        background: transparent;
+        color: #111;
+      }
+    }
+  }
+
+  .has-bg-whiter {
+    background-color: #f2f6f8;
+    position: relative;
+  }
+
+  .right-icon {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.why-choose {
+  padding-top: 19.3rem;
+  background: #f2f6f8;
+  position: relative;
+  padding-bottom: 24.2rem;
+  .head {
+    font-weight: $normal;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    @include breakpoint-up(md) {
+      font-size: 4rem;
+      padding-bottom: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      font-size: 5rem;
+      padding-bottom: 6rem;
+    }
+    @include breakpoint-up(x-lg) {
+      padding-bottom: 7rem;
+    }
+  }
+  .icon-align {
+    align-items: baseline;
+  }
+  .arrow-icons {
+    @include breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+    }
+    @include breakpoint-up(md) {
+      position: relative;
+      top: 10px;
+    }
+    @include breakpoint-up(lg) {
+      position: relative;
+      top: 16px;
+    }
+    .left-icon {
+      height: 64px;
+      width: 64px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .right-icon {
+      height: 64px;
+      width: 64px;
+      cursor: pointer;
+    }
+  }
+}
+
+.bottom-gap-mob {
+  @include breakpoint-down(md) {
+    padding-bottom: 2rem;
+  }
+}

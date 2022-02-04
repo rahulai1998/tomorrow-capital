@@ -1,0 +1,142 @@
+.thoughts {
+  &-head {
+    font-weight: $normal;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    @include breakpoint-up(md) {
+      font-size: 4rem;
+      padding-bottom: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      font-size: 5rem;
+      padding-bottom: 6rem;
+    }
+    @include breakpoint-up(x-lg) {
+      padding-bottom: 7rem;
+    }
+  }
+
+  &-items {
+    flex-direction: column;
+
+    @include breakpoint-up(md) {
+      flex-direction: row;
+      gap: 3rem;
+      padding-bottom: 5rem;
+      border-bottom: 2px solid #979797;
+    }
+    @include breakpoint-up(x-lg) {
+      gap: 5rem;
+      padding-bottom: 7rem;
+    }
+    @include breakpoint-up(xx-lg) {
+      gap: 7rem;
+      padding-bottom: 8.5rem;
+    }
+
+    .item {
+      position: relative;
+
+      &:not(:last-child) {
+        border-bottom: 2px solid #979797;
+      }
+
+      padding-bottom: 5rem;
+      &:not(:first-child) {
+        padding-top: 5rem;
+      }
+      @include breakpoint-up(md) {
+        &:not(:first-child) {
+          padding-top: 0;
+        }
+        padding-bottom: 0;
+
+        border-bottom: none !important;
+      }
+      @include breakpoint-up(lg) {
+        margin: 0;
+      }
+      @include breakpoint-up(xx-lg) {
+        max-width: 450px;
+      }
+      .top {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        p {
+          font-weight: $bold;
+        }
+        small {
+          font-weight: $normal;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 2.2rem;
+          margin-bottom: 1.8rem;
+        }
+        @include breakpoint-up(x-lg) {
+          margin-bottom: 2.3rem;
+        }
+      }
+      img {
+        height: 17rem;
+        margin-bottom: 2rem;
+        @include breakpoint-up(md) {
+          height: 20rem;
+          margin-bottom: 3rem;
+        }
+        @include breakpoint-up(lg) {
+          height: 23rem;
+          margin-bottom: 3.5rem;
+        }
+        @include breakpoint-up(x-lg) {
+          height: 27rem;
+          margin-bottom: 4rem;
+        }
+      }
+      .title {
+        margin-bottom: 3rem;
+        line-height: 25px;
+        @include breakpoint-up(md) {
+          margin-bottom: 4rem;
+          line-height: 35px;
+        }
+        @include breakpoint-up(x-lg) {
+          margin-bottom: 6rem;
+          line-height: 35px;
+        }
+      }
+      .desc {
+        font-size: 1.6rem;
+        font-weight: $normal;
+        line-height: 25px;
+        @include breakpoint-up(lg) {
+          font-size: 1.8rem;
+          line-height: 35px;
+        }
+        @include breakpoint-up(x-lg) {
+          font-size: 2rem;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+  .btn {
+    border: 2px solid #006778;
+    color: #006778;
+    margin-top: 4rem;
+    transition: 0.3s;
+    @include breakpoint-up(md) {
+      margin-top: 5rem;
+    }
+    @include breakpoint-up(x-lg) {
+      margin-top: 7rem;
+    }
+    @include breakpoint-up(xx-lg) {
+      margin-top: 8.5rem;
+    }
+
+    &:hover {
+      background: $overlay-green;
+      color: $white;
+    }
+  }
+}

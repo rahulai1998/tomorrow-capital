@@ -1,0 +1,190 @@
+.current-openings {
+  padding-bottom: 10rem;
+  &-head {
+    font-weight: $normal;
+    font-size: 3.5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-bottom: 9rem;
+    line-height: 50px;
+    @include breakpoint-up(md) {
+      font-size: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+  &-accordian {
+    .acc_ctrl {
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      display: block;
+      outline: none;
+      position: relative;
+      width: 100%;
+      margin-bottom: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 63px 0px;
+      padding: 2.5rem 1rem;
+      @include breakpoint-up(md) {
+        padding: 2.5rem 4rem;
+        margin-bottom: 3rem;
+      }
+      @include breakpoint-up(lg) {
+        padding: 3.5rem 5rem;
+        margin-bottom: 4rem;
+      }
+      h2 {
+        text-align: left;
+        color: #151515;
+        font-size: 1.5rem;
+        font-weight: normal;
+        @include breakpoint-up(md) {
+          font-size: 2rem;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 2.4rem;
+        }
+      }
+      .icon {
+        width: 23px;
+        height: 23px;
+        border: 2px solid #2b8999;
+        border-radius: 50%;
+        margin-left: auto;
+        padding-left: 2px;
+        @include breakpoint-up(md) {
+          width: 25px;
+          height: 25px;
+          padding-left: 0px;
+        }
+        @include breakpoint-up(lg) {
+          width: 30px;
+          height: 30px;
+          padding-left: 0px;
+        }
+        svg {
+          transform: rotate(-90deg);
+          transition: 0.3s;
+        }
+      }
+      &.rotate {
+        svg {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    .acc_panel {
+      background: $white;
+      overflow: hidden;
+      color: $text-green;
+      padding-bottom: 4rem;
+      display: grid;
+      padding-left: 10px;
+      padding-right: 10px;
+      @include breakpoint-up(md) {
+        grid-template-columns: 0.5fr 3fr 4fr 1.5fr;
+        gap: 1rem;
+      }
+      @include breakpoint-up(x-lg) {
+        grid-template-columns: 0.5fr 3fr 3fr 1.4fr;
+        gap: 3rem;
+      }
+      &_btn {
+        text-align: right;
+        .btn {
+          cursor: pointer;
+          background: #2b8999;
+          color: $white;
+          white-space: nowrap;
+          border: 2px solid #2b8999;
+          @include breakpoint-up(md) {
+            padding: 1.5rem 2.5rem;
+          }
+          @include breakpoint-up(x-lg) {
+            padding: 2.5rem 3.5rem;
+          }
+          &:hover {
+            background: $white;
+            color: #2b8999;
+            border-color: #2b8999;
+          }
+        }
+      }
+      .head {
+        color: #04353e;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        @include breakpoint-up(md) {
+          font-size: 2rem;
+          padding-bottom: 2.2rem;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 2.8rem;
+          padding-bottom: 3rem;
+        }
+      }
+      .desc-space{
+        @include breakpoint-up(x-lg) {
+          padding-left: 5.5rem;
+        }
+      }
+      .desc-text {
+        font-size: 1.6rem;
+        line-height: 25px;
+        color: #202020;
+        &_space {
+          padding-bottom: 4rem;
+        }
+        @include breakpoint-up(md) {
+          font-size: 1.5rem;
+          line-height: 25px;
+          &_space {
+            padding-bottom: 0rem;
+          }
+        }
+        @include breakpoint-up(lg) {
+          font-size: 2rem;
+          line-height: 35px;
+        }
+
+        li {
+          display: flex;
+        }
+      }
+      .points {
+        width: 10px;
+        height: 10px;
+        background: #2b8999;
+        border-radius: 50%;
+        padding: 5px;
+        margin-right: 1.2rem;
+        margin-top: 8px;
+        @include breakpoint-up(md) {
+          margin-right: 2.5rem;
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &-wrap {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+      align-items: center;
+      @include breakpoint-up(md) {
+        grid-template-columns: 0.5fr 3fr 4fr 1.5fr;
+        gap: 1rem;
+      }
+      @include breakpoint-up(lg) {
+        gap: 3rem;
+        grid-template-columns: 0.5fr 3fr 3fr 1.4fr;
+      }
+      @include breakpoint-up(x-lg) {
+        gap: 3rem;
+        grid-template-columns: 0.7fr 3fr 3fr 1.4fr;
+      }
+    }
+  }
+}

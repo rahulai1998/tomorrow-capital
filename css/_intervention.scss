@@ -1,0 +1,203 @@
+.intervention {
+  .head {
+    font-size: 2rem;
+    color: #202020;
+    font-weight: 700;
+    margin-bottom: 2.8rem;
+    @include breakpoint-up(lg) {
+      font-size: 2.9rem;
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  .items {
+    position: relative;
+    @include breakpoint-up(md) {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    @include breakpoint-up(lg) {
+      padding-top: 0rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: #006778;
+      width: 0.2rem;
+      height: 90%;
+      z-index: -1;
+      top: 2.2rem;
+      left: 1.6rem;
+      @include breakpoint-up(md) {
+        width: 76%;
+        height: 0.2rem;
+        top: calc(7.6rem / 2.6);
+        left: 3rem;
+      }
+      @include breakpoint-up(lg) {
+        width: 80%;
+        height: 0.2rem;
+        top: calc(7.6rem / 2.5);
+        left: 3rem;
+      }
+    }
+  }
+  .items1 {
+    position: relative;
+    @include breakpoint-up(lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: #006778;
+      width: 0.2rem;
+      height: 83%;
+      z-index: -1;
+      top: 2.2rem;
+      left: 1rem;
+      @include breakpoint-up(lg) {
+        width: 75%;
+        height: 0.2rem;
+        top: calc(7.6rem / 5.5);
+        left: 2.5rem;
+      }
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: #202020;
+      line-height: 28px;
+      @include breakpoint-up(lg) {
+        padding-top: 3rem;
+        font-size: 2rem;
+        line-height: 32px;
+      }
+      &.right-gap {
+        @include breakpoint-up(lg) {
+          padding-right: 3rem;
+        }
+      }
+      &.left-gap {
+        @include breakpoint-down(lg) {
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
+  .item {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+    @include breakpoint-up(md) {
+      display: block;
+      margin-bottom: 0;
+      flex-basis: 25%;
+      align-items: center;
+    }
+
+    .logo {
+      height: 3.2rem;
+      width: 3.2rem;
+      background-color: #006778;
+      border-radius: 50%;
+      @include breakpoint-up(md) {
+        height: 4rem;
+        width: 4rem;
+      }
+      @include breakpoint-up(lg) {
+        height: 6rem;
+        width: 6rem;
+      }
+      img {
+        width: 50% !important;
+        height: 50% !important;
+      }
+    }
+    .title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0 0 0 2rem;
+      @include breakpoint-up(md) {
+        margin: 2rem 0 0 0;
+      }
+      @include breakpoint-up(lg) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .item1 {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+    @include breakpoint-up(lg) {
+      display: block;
+      margin-bottom: 0;
+      flex-basis: 25%;
+      align-items: center;
+    }
+    .logo1 {
+      height: 22px;
+      width: 22px;
+      @include breakpoint-up(lg) {
+        height: 28px;
+        width: 28px;
+      }
+      img {
+        height: 22px;
+        width: 22px;
+        @include breakpoint-up(lg) {
+          height: 28px;
+          width: 28px;
+        }
+      }
+    }
+  }
+  .date-info {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    align-items: center;
+    @include breakpoint-up(lg) {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+    }
+    .round-circle {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      background: #006778;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2rem;
+      @include breakpoint-up(lg) {
+        margin-right: 5rem;
+        width: 100px;
+        height: 100px;
+      }
+      p {
+        color: #fff;
+        font-size: 1.5rem;
+        @include breakpoint-up(md) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .text {
+      color: #202020;
+      font-size: 1.6rem;
+      line-height: 24px;
+      @include breakpoint-up(lg) {
+        font-size: 2rem;
+        line-height: 35px;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

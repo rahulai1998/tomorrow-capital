@@ -1,0 +1,80 @@
+.incredible-workplace {
+  background: #04353e;
+  &-head {
+    color: #fff;
+    font-weight: $normal;
+    font-size: 3.5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    line-height: 50px;
+    @include breakpoint-up(md) {
+      font-size: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      padding-top: 8rem;
+      padding-bottom: 7rem;
+    }
+  }
+
+  .card-wrapper {
+    padding-bottom: 5.6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    @include breakpoint-up(md) {
+      grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+      gap: 4rem;
+    }
+    @include breakpoint-up(lg) {
+      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+      gap: 7rem;
+      padding-bottom: 8rem;
+    }
+    .card-child {
+      padding-bottom: 5rem;
+      @include breakpoint-up(md) {
+        padding-bottom: 2.4rem;
+      }
+      @include breakpoint-up(lg) {
+        padding-bottom: 4.4rem;
+      }
+      .card-icon{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 35px;
+        @include breakpoint-up(md) {
+          height: 70px;
+          width: 70px;
+        }
+        @include breakpoint-up(lg) {
+          margin-bottom: 40px;
+        }
+      }
+      h1 {
+        font-size: 2rem;
+        color: #ffffff;
+        padding-bottom: 1.5rem;
+        @include breakpoint-up(md) {
+          font-size: 2.8rem;
+          padding-bottom: 2rem;
+        }
+        @include breakpoint-up(lg) {
+          padding-bottom: 3rem;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        color: #7a96aa;
+        font-size: 1.8rem;
+        line-height: 22px;
+        @include breakpoint-up(lg) {
+          line-height: 35px;
+        }
+        @include breakpoint-up(md) {
+          font-size: 2rem;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

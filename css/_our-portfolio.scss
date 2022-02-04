@@ -1,0 +1,42 @@
+.our-portfolio {
+  .portfolio-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    @include breakpoint-up(lg) {
+      justify-content: left;
+      gap: 2rem;
+    }
+    @include breakpoint-up(x-lg) {
+      gap: 5rem;
+    }
+
+    @include breakpoint-up(xx-lg) {
+      gap: 7rem;
+    }
+
+    .is-basis {
+      padding: 3rem 2.5rem;
+      height: 12rem;
+      width: 30rem;
+      background-color: #fff;
+
+      @include breakpoint-up(x-lg) {
+        padding: 4rem 3.5rem;
+        height: 17rem;
+        width: initial !important;
+        flex-basis: 30%;
+      }
+      @include breakpoint-up(xx-lg) {
+        padding: 4.5rem 4rem;
+        height: 18.1rem;
+        width: 40.5rem;
+      }
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.content {
+  position: relative;
+  background: $primary-green;
+  color: $white;
+
+  .content-text {
+    font-weight: $normal;
+    font-size: 2.2rem;
+    line-height: 32px;
+    margin-bottom: 8rem;
+    @include breakpoint-up(md) {
+      font-size: 2.5rem;
+      line-height: 44px;
+    }
+    @include breakpoint-up(lg) {
+      font-size: 2.7rem;
+      line-height: 40px;
+      margin-bottom: 8rem;
+      width: 90%;
+    }
+    @include breakpoint-up(x-lg) {
+      font-size: 3rem;
+      line-height: 45px;
+      width: 87%;
+    }
+    .desc {
+      // display: none;
+      padding-top: 1.5rem;
+      font-weight: 600;
+      @include breakpoint-up(lg) {
+        padding-top: 3rem;
+      }
+    }
+    .dots {
+      transition: .3s;
+    }
+    
+  }
+  .content-btn {
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+      background: #2b8999;
+      transition: 1s;
+    }
+  }
+
+  .primary-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 7rem;
+    @include breakpoint-up(md) {
+      width: 10.3rem;
+    }
+    @include breakpoint-up(x-lg) {
+      width: 14rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .secondary-arrow {
+    position: absolute;
+    right: 6rem;
+    bottom: 13rem;
+    width: 4rem;
+    @include breakpoint-up(md) {
+      right: 11.3rem;
+      bottom: 13rem;
+    }
+    @include breakpoint-up(lg) {
+      right: 12rem;
+      bottom: 15rem;
+      width: 6rem;
+    }
+    @include breakpoint-up(x-lg) {
+      right: 14rem;
+      bottom: 22rem;
+      width: 7rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

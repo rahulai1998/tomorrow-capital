@@ -1,0 +1,256 @@
+.sayhi {
+  &-head {
+    font-weight: $normal;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    @include breakpoint-up(md) {
+      font-size: 4rem;
+      padding-bottom: 5rem;
+    }
+    @include breakpoint-up(lg) {
+      font-size: 5rem;
+      padding-bottom: 6rem;
+    }
+    @include breakpoint-up(x-lg) {
+      padding-bottom: 7rem;
+    }
+    &.top-space {
+      padding-top: 8rem;
+      @include breakpoint-down(md) {
+        padding-top: 4rem;
+      }
+    }
+    &.top-space-1 {
+      padding-top: 5rem;
+      @include breakpoint-down(md) {
+        padding-top: 2rem;
+      }
+    }
+    &.bottom-gap {
+      padding-bottom: 8rem;
+      @include breakpoint-down(md) {
+        padding-bottom: 6rem;
+      }
+    }
+  }
+  &-form {
+    flex-direction: column;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    @include breakpoint-down(md) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    @include breakpoint-up(md) {
+      flex-direction: row;
+      padding-left: 0;
+      gap: 2rem;
+    }
+    @include breakpoint-up(lg) {
+      gap: 4rem;
+    }
+    @include breakpoint-up(x-lg) {
+      gap: 7rem;
+    }
+    .left {
+      margin-bottom: 2rem;
+      button {
+        display: block;
+        width: 100%;
+        border: none;
+        text-align: left;
+        font-size: 2rem;
+        @include breakpoint-up(lg) {
+          font-size: 3.5rem;
+        }
+      }
+      @include breakpoint-up(md) {
+        min-width: 25.8rem;
+        flex-basis: 30%;
+        margin-bottom: 0;
+      }
+      @include breakpoint-up(lg) {
+        flex-basis: 40%;
+        min-width: 33.8rem;
+      }
+      @include breakpoint-up(x-lg) {
+        flex-basis: 30%;
+      }
+
+      .btn-enq,
+      .btn-join {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+        background-color: #f4f4f4;
+        font-weight: $normal;
+        font-size: 1.8rem;
+        color: #151515;
+        transition: 0.3s;
+        cursor: pointer;
+        white-space: nowrap;
+        @include breakpoint-up(md) {
+          padding-right: 22px !important;
+          padding-left: 22px !important;
+          background-color: #ffffff;
+          margin-bottom: 3rem;
+          font-size: 2rem;
+        }
+        @include breakpoint-up(lg) {
+          padding-right: 30px !important;
+          padding-left: 30px !important;
+          font-size: 2.2rem;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 0.3rem;
+          height: 100%;
+          background: #006778;
+          transform: translateX(-100%);
+          transition: 0.3s;
+          @include breakpoint-up(md) {
+            width: 0.7rem;
+          }
+          @include breakpoint-up(x-lg) {
+            width: 1rem;
+          }
+        }
+        &.form-active::after {
+          transform: translateX(0);
+        }
+        &.form-active {
+          background-color: #f4f4f4;
+          img {
+            visibility: unset !important;
+          }
+        }
+        &:hover {
+          background-color: #f4f4f4;
+        }
+        img {
+          width: 25px !important;
+          @include breakpoint-up(md) {
+            width: 28px !important;
+          }
+          @include breakpoint-up(lg) {
+            width: 34px !important;
+          }
+        }
+      }
+    }
+
+    .right {
+      .form {
+        display: none;
+        label {
+          display: block;
+          font-size: 1.3rem;
+          font-weight: $normal;
+          margin-bottom: 0.5rem;
+        }
+        select,
+        input {
+          border: none;
+          font-weight: $normal;
+          border-bottom: 2px solid #979797;
+          padding: 0.8rem 0;
+          outline: none;
+          font-size: 1.8rem;
+          @include breakpoint-down(md) {
+            padding: 0.8rem 0;
+            margin-bottom: 4rem;
+            width: 100%;
+          }
+
+          &.wd-100 {
+            width: 100% !important;
+          }
+        }
+        select{
+          width: 100%;
+        }
+        &-handle {
+          @include breakpoint-up(md) {
+            margin-bottom: 4rem;
+          }
+        }
+
+        &.form-active {
+          display: block !important;
+        }
+
+        .email-company {
+          @include breakpoint-down(md) {
+            flex-direction: column;
+          }
+        }
+
+        .name {
+          @include breakpoint-down(md) {
+            div {
+              width: 100%;
+            }
+          }
+        }
+        .btn {
+          color: #006778;
+          border: 2px solid #006778;
+
+          &:hover {
+            background: $overlay-green;
+            color: $white;
+          }
+        }
+      }
+      @include breakpoint-up(sm) {
+        padding-right: 2rem;
+      }
+      @include breakpoint-up(md) {
+        flex-basis: 70%;
+        padding-right: 3rem;
+        .name,
+        .email-company {
+          gap: 2rem;
+
+          div {
+            width: 50%;
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+      @include breakpoint-up(lg) {
+        flex-basis: 60%;
+        padding-right: 8rem;
+        min-width: none;
+        .name,
+        .email-company {
+          gap: 4rem;
+        }
+      }
+      @include breakpoint-up(x-lg) {
+        flex-basis: 70%;
+        padding-right: 9rem;
+        .name,
+        .email-company {
+          gap: 7rem;
+        }
+      }
+    }
+  }
+}
+
+.bottom-gap {
+  padding-bottom: 5rem;
+  @include breakpoint-up(lg) {
+    padding-bottom: 8rem;
+  }
+}

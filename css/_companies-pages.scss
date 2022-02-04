@@ -1,0 +1,347 @@
+.companies-pages {
+  .section-bg-img {
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin-bottom: -5px;
+    @include breakpoint-down(md) {
+      height: 250px;
+      object-fit: fill;
+    }
+  }
+  .main-heading {
+    background: #f2f6f8;
+    h1 {
+      color: #04353e;
+      font-style: normal;
+      font-weight: 600;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-size: 3rem;
+      @include breakpoint-up(md) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 3rem;
+      }
+      @include breakpoint-up(lg) {
+        font-size: 5rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+    }
+  }
+  .content-section {
+    &.top-gap {
+      @include breakpoint-up(md) {
+        padding-top: 7rem;
+      }
+    }
+    h2 {
+      padding-top: 7rem;
+      padding-bottom: 2rem;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2.5rem;
+      line-height: 60px;
+      letter-spacing: -0.005em;
+      color: #202020;
+      @include breakpoint-down(lg) {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 40px;
+      }
+      &.top-gap {
+        padding-top: 0rem !important;
+      }
+    }
+
+    .first-grid {
+      position: relative;
+      &.is-gird-1 {
+        display: flex;
+        @include breakpoint-down(md) {
+          flex-direction: column;
+          flex-direction: column-reverse;
+        }
+      }
+      &.top-gap {
+        padding-top: 2rem;
+        @include breakpoint-up(md) {
+          padding-top: 3rem;
+        }
+        @include breakpoint-up(lg) {
+          padding-top: 10rem;
+        }
+      }
+      .col {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        &.is-small {
+          @include breakpoint-up(md) {
+            flex-basis: 80%;
+          }
+          @include breakpoint-up(lg) {
+            flex-basis: 70%;
+          }
+        }
+        &.left-gap {
+          @include breakpoint-up(md) {
+            padding-left: 3rem;
+          }
+          @include breakpoint-up(lg) {
+            padding-left: 5rem;
+          }
+        }
+        &.top-gap-mob {
+          @include breakpoint-down(md) {
+            padding-top: 3rem;
+          }
+        }
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 2rem;
+          color: #202020;
+          line-height: 32px;
+          @include breakpoint-down(lg) {
+            font-size: 1.5rem;
+          }
+          &.bottom-gap {
+            padding-bottom: 3rem;
+            @include breakpoint-down(lg) {
+              padding-bottom: 2rem;
+            }
+          }
+          &.top-gap-mob {
+            @include breakpoint-down(md) {
+              padding-bottom: 5rem;
+              padding-top: 2rem;
+            }
+          }
+        }
+      }
+      .card-1 {
+        background: #ffffff;
+        box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.04);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 4rem;
+        padding-right: 10rem;
+        position: relative;
+        @include breakpoint-down(lg) {
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+          padding-left: 2.5rem;
+          padding-right: 6rem;
+        }
+        &.card-bottom-gap {
+          margin-bottom: 3rem;
+        }
+        .bottom-gap {
+          padding-bottom: 0.5rem;
+        }
+        img {
+          width: 52px;
+          height: 52px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        p {
+          font-size: 2rem;
+          @include breakpoint-down(lg) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .bottom-icon1 {
+        position: absolute;
+        width: 11rem;
+        height: 11rem;
+        right: -16px;
+        bottom: -90px;
+        @include breakpoint-up(md) {
+          width: 12rem;
+          height: 12rem;
+          right: -4rem;
+          bottom: 0;
+        }
+        @include breakpoint-up(lg) {
+          width: 15rem;
+          height: 15rem;
+          right: -4rem;
+        }
+        @include breakpoint-up(x-lg) {
+          right: -9rem;
+        }
+      }
+      .bottom-icon2 {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        right: 11rem;
+        bottom: -90px;
+        @include breakpoint-up(md) {
+          width: 4rem;
+          height: 4rem;
+          right: 8rem;
+          bottom: 0;
+        }
+        @include breakpoint-up(lg) {
+          width: 5rem;
+          height: 5rem;
+          right: 14rem;
+        }
+        @include breakpoint-up(x-lg) {
+          right: 7rem;
+        }
+      }
+    }
+    .second-grid {
+      padding-top: 12rem;
+      padding-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      @include breakpoint-up(md) {
+        flex-direction: row;
+        padding-top: 5rem;
+      }
+      @include breakpoint-up(lg) {
+        padding-top: 8rem;
+      }
+      &.top-gap {
+        @include breakpoint-down(md) {
+          padding-top: 5rem;
+        }
+      }
+    }
+    .card-info {
+      .col {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        &.right-gap {
+          @include breakpoint-up(md) {
+            padding-right: 2rem;
+          }
+          @include breakpoint-up(lg) {
+            padding-right: 5rem;
+          }
+        }
+        &.left-gap {
+          padding-top: 3rem;
+          @include breakpoint-up(md) {
+            padding-left: 2rem;
+            padding-top: 0rem;
+          }
+          @include breakpoint-up(lg) {
+            padding-left: 5rem;
+            padding-top: 0rem;
+          }
+        }
+        img {
+          height: 7rem;
+          width: 7rem;
+          border-radius: 50%;
+          @include breakpoint-up(lg) {
+            height: 10rem;
+            width: 10rem;
+          }
+        }
+        h3 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 2.5rem;
+          color: #151515;
+          padding-top: 2rem;
+          @include breakpoint-down(lg) {
+            font-size: 2rem;
+            padding-top: 1.5rem;
+          }
+        }
+        h4 {
+          padding-top: 1.2rem;
+          padding-bottom: 2rem;
+          font-style: normal;
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: #04353e;
+          @include breakpoint-down(lg) {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 2rem;
+          color: #202020;
+          line-height: 32px;
+          @include breakpoint-down(lg) {
+            font-size: 1.5rem;
+          }
+          &.top-gap {
+            @include breakpoint-down(md) {
+              padding-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .zeno-logo {
+      width: 350px;
+      padding-bottom: 6rem;
+      @include breakpoint-down(lg) {
+        padding-bottom: 4rem;
+        width: 260px;
+      }
+    }
+
+    .bonito-logo {
+      width: 230px;
+      padding-bottom: 6rem;
+      padding-top: 3rem;
+      @include breakpoint-down(lg) {
+        padding-bottom: 4rem;
+        padding-top: 1rem;
+        width: 150px;
+      }
+    }
+
+    .leverage-edu {
+      width: 200px;
+      padding-bottom: 6rem;
+      padding-top: 5rem;
+      @include breakpoint-down(lg) {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        width: 120px;
+      }
+    }
+  }
+}
+
+.is-bottom-gap {
+  padding-bottom: 3rem;
+  @include breakpoint-down(lg) {
+    padding-bottom: 2rem;
+  }
+}
+
+.bottom-gap-btn-1{
+  padding-bottom: 6rem;
+  @include breakpoint-down(lg) {
+    padding-bottom: 4rem;
+  }
+}
+
+.next-page-space{
+  display: none;
+  @include breakpoint-down(md) {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+}

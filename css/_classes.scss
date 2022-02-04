@@ -1,0 +1,280 @@
+.container {
+  margin: 0 auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  @include breakpoint-up(sm) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include breakpoint-up(md) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  @include breakpoint-up(lg) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  @include breakpoint-up(x-lg) {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+.space-left {
+  padding-left: 1.6rem;
+  @include breakpoint-up(sm) {
+    padding-left: 2rem;
+  }
+  @include breakpoint-up(md) {
+    padding-left: 5rem;
+  }
+  @include breakpoint-up(lg) {
+    padding-left: 8rem;
+  }
+  @include breakpoint-up(x-lg) {
+    padding-left: 9rem;
+  }
+}
+.space-right {
+  padding-right: 1.6rem;
+  @include breakpoint-up(sm) {
+    padding-right: 2rem;
+  }
+  @include breakpoint-up(md) {
+    padding-right: 5rem;
+  }
+  @include breakpoint-up(lg) {
+    padding-right: 8rem;
+  }
+  @include breakpoint-up(x-lg) {
+    padding-right: 9rem;
+  }
+}
+
+.space-top-bottom {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  @include breakpoint-down(md) {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+  @include breakpoint-down(lg) {
+    padding-top: 6rem;
+  }
+}
+
+.space-bottom {
+  padding-bottom: 8rem;
+  @include breakpoint-up(md) {
+    padding-bottom: 10rem;
+  }
+  @include breakpoint-up(lg) {
+    padding-bottom: 20rem;
+  }
+}
+
+.handle-it {
+  position: relative;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 5rem;
+  @include breakpoint-up(md) {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  @include breakpoint-up(lg) {
+    gap: 12rem;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5.4rem;
+  display: inline-block;
+  padding: 1.5rem 3.5rem;
+  transition: 0.3s;
+  text-align: center;
+  @include breakpoint-up(md) {
+    padding: 1.5em 4.5rem;
+  }
+
+  @include breakpoint-up(lg) {
+    border-radius: 5.4rem;
+    padding: 2.1rem 5rem;
+  }
+
+  &.is-green {
+    background-color: #006778 !important;
+    color: #fff !important;
+    margin-right: 5rem;
+    @include breakpoint-down(lg) {
+      margin-right: 2rem;
+    }
+  }
+  &.small-btn {
+    border-radius: 0px !important;
+    padding: 15px !important;
+    width: 40%;
+    @include breakpoint-up(md) {
+      width: 30%;
+    }
+    @include breakpoint-up(lg) {
+      width: 25%;
+    }
+  }
+  &.is-selected {
+    background-color: #006778 !important;
+    color: #fff !important;
+  }
+  &.m-r-20 {
+    margin-right: 20px;
+  }
+  &.btn-gap {
+    @include breakpoint-down(lg) {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
+  &.btn-wd {
+    @include breakpoint-down(lg) {
+      width: 46% !important;
+    }
+    @include breakpoint-down(md) {
+      width: 70% !important;
+    }
+  }
+  &.is-hoverable:hover {
+    background: #2b8999 !important;
+    color: #fff !important;
+    border-color: #2b8999 !important;
+  }
+  &.is-hoverable-1:hover {
+    background: #fff !important;
+    color: #111 !important;
+    border-color: #2b8999 !important;
+  }
+}
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-dir-col {
+    flex-direction: column;
+  }
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@include breakpoint-down(md) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@include breakpoint-up(md) {
+  .hide-for-laptop {
+    display: none;
+  }
+}
+@include breakpoint-down(lg) {
+  .hide-for-md {
+    display: none !important;
+  }
+}
+@include breakpoint-up(lg) {
+  .hide-for-lg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1155px) {
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+
+  .incredible-workplace .card-wrapper {
+    gap: 4rem !important;
+  }
+
+  .space-left {
+    padding-left: 4rem !important;
+  }
+
+  .handle-it {
+    gap: 4rem !important;
+  }
+
+  .we-work .acc-we-work h2 {
+    font-size: 3rem !important;
+  }
+
+  .img-container .img .desc .name {
+    font-size: 2.5rem !important;
+  }
+
+  .img-container .img .desc .role {
+    font-size: 1.5rem !important;
+  }
+
+  .our-vision .content-wrapper .banner-content p {
+    width: 95% !important;
+    font-size: 3rem !important;
+  }
+
+  .our-vision .content-wrapper .banner-content .right-arrow {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .incredible-workplace .card-wrapper .card-child h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+// For scroll to top
+#button-top {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  @include breakpoint-down(md) {
+    right: 10px;
+  }
+  img {
+    width: 20px;
+    transform: rotate(180deg);
+    margin-top: 16px;
+  }
+}
+#button-top:hover {
+  cursor: pointer;
+  background-color: #2b8999;
+}
+#button-top:active {
+  background-color: #2b8999;
+}
+#button-top.show {
+  opacity: 1;
+  visibility: visible;
+}

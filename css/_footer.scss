@@ -1,0 +1,204 @@
+.footer {
+  background: #151515;
+  &-icon {
+    @include breakpoint-down(md) {
+      text-align: center;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+
+      @include breakpoint-up(md) {
+        width: 5rem;
+        height: 5rem;
+      }
+      @include breakpoint-up(lg) {
+        width: 8rem;
+        height: 8rem;
+      }
+      @include breakpoint-up(x-lg) {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+
+  &-content {
+    color: $white !important;
+    &-head {
+      padding-bottom: 8rem;
+      @include breakpoint-down(md) {
+        text-align: center;
+        h1 {
+          margin: 0 auto;
+        }
+      }
+      h1 {
+        font-size: 2.8rem;
+        font-weight: $bold;
+        max-width: 29rem;
+        @include breakpoint-up(md) {
+          max-width: initial;
+          font-size: 4rem;
+        }
+        @include breakpoint-up(lg) {
+          font-size: 5rem;
+        }
+      }
+      @include breakpoint-up(md) {
+        padding-bottom: 10rem;
+        padding-left: 3rem;
+      }
+      @include breakpoint-up(x-lg) {
+        padding-left: 5rem;
+      }
+    }
+    &-items {
+      // display: grid;
+      // grid-template-areas:
+      //   "W W W W"
+      //   "L L L L"
+      //   "N N N N";
+      // grid-template-columns: repeat(4, 1fr);
+      // row-gap: 4rem;
+
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        "W"
+        "L"
+        "N"
+        "S";
+
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      justify-content: center;
+
+      @include breakpoint-up(md) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "L W" "S N";
+        padding-left: 3rem;
+      }
+      @include breakpoint-up(lg) {
+        grid-template-columns: 3fr 1fr 1fr 2fr;
+        grid-template-areas: "L W S N";
+        gap: 3rem;
+      }
+      @include breakpoint-up(x-lg) {
+        // grid-template-columns: 3fr 1fr 1fr 2fr;
+        gap: 4rem;
+        padding-left: 5.5rem;
+      }
+      @include breakpoint-up(xx-lg) {
+        gap: 5rem;
+      }
+
+      .item {
+        // text-align: center;
+        @include breakpoint-down(lg) {
+          text-align: center !important;
+        }
+        &.center-align {
+          text-align: center;
+          @include breakpoint-up(md) {
+            text-align: unset;
+          }
+        }
+        .item-head {
+          font-weight: $bold;
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        li,
+        p,
+        a {
+          font-weight: $thin;
+          font-size: 1.8rem;
+          line-height: 3.4rem;
+          padding-bottom: 5px;
+          a {
+            color: $white;
+          }
+        }
+      }
+      .item-L {
+        grid-area: L;
+
+        .location-desc {
+          max-width: 40rem;
+          @include breakpoint-up(lg) {
+            max-width: 50rem;
+          }
+        }
+        .location-img {
+          margin-top: 2rem;
+          @include breakpoint-up(lg) {
+            margin-top: 2rem;
+          }
+        }
+        @include breakpoint-up(x-lg) {
+          margin-right: 2rem;
+        }
+      }
+      .item-S {
+        grid-area: S;
+
+        @include breakpoint-down(md) {
+          justify-self: center;
+          h2 {
+            text-align: center;
+          }
+          li {
+            a {
+              display: inline-block;
+              padding: 0 1.9rem;
+              img {
+                height: 28px !important;
+                width: 28px !important;
+              }
+            }
+          }
+        }
+        .hide-for-mobile {
+          .fab {
+            margin-right: 1.2rem;
+          }
+        }
+      }
+      .item-W {
+        grid-area: W;
+      }
+      .item-N {
+        grid-area: N;
+        input {
+          border: none;
+          background: none;
+          color: #fff;
+          font-size: 2rem;
+          border-bottom: 2px solid #fff;
+          padding: 10px;
+          width: 100%;
+          outline: none;
+        }
+        .btn {
+          color: #fff;
+          background: #2b8999;
+          margin-top: 3rem;
+          padding: 1rem 1.4rem;
+        }
+      }
+    }
+  }
+
+  .link-align{
+    a{
+      display: flex;
+      align-items: center;
+      img{
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

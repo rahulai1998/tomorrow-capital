@@ -1,0 +1,73 @@
+// variables
+$primary-black: #151515;
+$primary-green: #04353e;
+$text-green: #004652;
+$text-black: #292929;
+$white: #ffffff;
+$overlay-green: #006778;
+
+// font weight
+$thin: 300;
+$normal: 400;
+$bold: 700;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/PROXIMA-NOVA-ALT-BOLD.OTF") format("OTF"),
+    url("../fonts/PROXIMA-NOVA-ALT-LIGHT.OTF") format("OTF"),
+    url("../fonts/PROXIMA-NOVA-ALT THIN.OTF") format("OTF"),
+    url("../fonts/PROXIMA-NOVA-BLACK.OTF") format("OTF"),
+    url("../fonts/PROXIMA-NOVA-BOLD.OTF") format("OTF"),
+    url("../fonts/PROXIMA-NOVA-EXTRABOLD.OTF") format("OTF"),
+    url("../fonts/PROXIMA-NOVA-THIN.OTF") format("OTF"),
+    url("../fonts/PROXIMANOVA-REGULAR.OTF") format("OTF");
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "ProximaNova", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img,
+video {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+video {
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
+button {
+  outline: none;
+  background: none;
+}
+
+.stop-scroll {
+  width: 100%;
+  position: fixed;
+}
