@@ -1,0 +1,13 @@
+<svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.1" width="101" height="101" fill="#2EA7BC"/>
+<g opacity="0.5">
+<rect x="80.9546" y="52.7693" width="27.2308" height="27.2308" rx="5" transform="rotate(90 80.9546 52.7693)" fill="#2EA7BC"/>
+</g>
+<g opacity="0.25">
+<rect x="48.2776" y="52.7693" width="27.2308" height="27.2308" rx="5" transform="rotate(90 48.2776 52.7693)" fill="#2EA7BC"/>
+</g>
+<rect x="80.9546" y="21" width="27.2308" height="27.2308" rx="5" transform="rotate(90 80.9546 21)" fill="#2EA7BC"/>
+<g opacity="0.5">
+<rect x="48.2776" y="21" width="27.2308" height="27.2308" rx="5" transform="rotate(90 48.2776 21)" fill="#2EA7BC"/>
+</g>
+</svg>
