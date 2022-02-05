@@ -928,6 +928,22 @@ button {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .footer .link-align a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer .link-align a {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+
 .footer .link-align a img {
   width: 28px;
   height: 28px;
@@ -1222,15 +1238,15 @@ button {
 
 .content .content-text {
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 32px;
   margin-bottom: 8rem;
 }
 
 @media (min-width: 768px) {
   .content .content-text {
-    font-size: 2.5rem;
-    line-height: 44px;
+    font-size: 2.2rem;
+    line-height: 38px;
   }
 }
 
@@ -1282,7 +1298,7 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 7rem;
+  width: 6rem;
 }
 
 @media (min-width: 768px) {
@@ -1304,8 +1320,8 @@ button {
 .content .secondary-arrow {
   position: absolute;
   right: 6rem;
-  bottom: 13rem;
-  width: 4rem;
+  bottom: 8.5rem;
+  width: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -3240,7 +3256,7 @@ button {
 @media (min-width: 768px) {
   .why-choose-us .carousel-left .desc .sub-head, .why-choose-us .carousel-right .desc .sub-head {
     margin-bottom: 3rem;
-    padding-top: 0rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -3371,7 +3387,6 @@ button {
 
 @media (min-width: 768px) {
   .why-choose-us .carousel-left .item .image img {
-    height: 100vh !important;
     -o-object-fit: initial !important;
        object-fit: initial !important;
   }
@@ -3459,6 +3474,48 @@ button {
     bottom: -8rem;
     width: 8rem;
     height: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left .owl-carousel {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left .owl-carousel .owl-stage-outer {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left .owl-carousel .owl-stage-outer .owl-stage {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-left .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .image {
+    height: 100% !important;
   }
 }
 
@@ -4842,6 +4899,8 @@ button {
   width: 100%;
   height: calc(100vh - 100px);
   margin-bottom: -5px;
+  -o-object-fit: initial;
+     object-fit: initial;
 }
 
 @media (max-width: 767px) {

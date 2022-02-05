@@ -194,6 +194,12 @@
     a{
       display: flex;
       align-items: center;
+      @include breakpoint-up(md) {
+        justify-content: center;
+      }
+      @include breakpoint-up(lg) {
+        justify-content: unset;
+      }
       img{
         width: 28px;
         height: 28px;

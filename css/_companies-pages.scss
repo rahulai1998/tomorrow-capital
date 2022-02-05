@@ -3,6 +3,7 @@
     width: 100%;
     height: calc(100vh - 100px);
     margin-bottom: -5px;
+    object-fit: initial;
     @include breakpoint-down(md) {
       height: 250px;
       object-fit: fill;

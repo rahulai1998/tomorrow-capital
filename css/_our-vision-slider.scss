@@ -87,7 +87,7 @@
           padding-top: 1.5rem;
           @include breakpoint-up(md) {
             margin-bottom: 3rem;
-            padding-top: 0rem;
+            padding-top: 1.5rem;
           }
           @include breakpoint-up(x-lg) {
             font-size: 3.2rem;
@@ -185,7 +185,7 @@
               margin-left: -1px;
             }
             @include breakpoint-up(md) {
-              height: 100vh !important;
+              // height: 100vh !important;
               object-fit: initial !important;
             }
             @include breakpoint-up(lg) {
@@ -270,6 +270,42 @@
         bottom: -8rem;
         width: 8rem;
         height: 8rem;
+      }
+    }
+  }
+}
+
+.carousel-left {
+  @include breakpoint-up(md) {
+    height: 100% !important;
+  }
+  .owl-carousel {
+    @include breakpoint-up(md) {
+      height: 100% !important;
+    }
+    .owl-stage-outer {
+      @include breakpoint-up(md) {
+        height: 100% !important;
+      }
+      .owl-stage {
+        @include breakpoint-up(md) {
+          height: 100% !important;
+        }
+        .owl-item {
+          @include breakpoint-up(md) {
+            height: 100% !important;
+          }
+          .item {
+            @include breakpoint-up(md) {
+              height: 100% !important;
+            }
+            .image {
+              @include breakpoint-up(md) {
+                height: 100% !important;
+              }
+            }
+          }
+        }
       }
     }
   }
