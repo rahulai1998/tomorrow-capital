@@ -77,6 +77,9 @@
           @include breakpoint-up(x-lg) {
             font-size: 4rem;
           }
+          @include breakpoint-down(md) {
+            padding-top: 3rem;
+          }
         }
         .sub-head {
           font-weight: $normal;
@@ -178,6 +181,17 @@
 
           img {
             height: 100%;
+            @include breakpoint-up(md) {
+              margin-left: -1px;
+            }
+            @include breakpoint-up(md) {
+              height: 100vh !important;
+              object-fit: initial !important;
+            }
+            @include breakpoint-up(lg) {
+              height: 100% !important;
+              object-fit: initial !important;
+            }
           }
         }
       }

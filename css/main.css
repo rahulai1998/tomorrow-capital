@@ -2688,7 +2688,7 @@ button {
   .sayhi-form .left .btn-enq,
   .sayhi-form .left .btn-join {
     padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding-left: 9rem !important;
     font-size: 2.2rem;
   }
 }
@@ -3225,6 +3225,12 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .why-choose-us .carousel-left .desc .count, .why-choose-us .carousel-right .desc .count {
+    padding-top: 3rem;
+  }
+}
+
 .why-choose-us .carousel-left .desc .sub-head, .why-choose-us .carousel-right .desc .sub-head {
   font-weight: 400;
   font-size: 2rem;
@@ -3355,6 +3361,28 @@ button {
 
 .why-choose-us .carousel-left .item .image img {
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .why-choose-us .carousel-left .item .image img {
+    margin-left: -1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .why-choose-us .carousel-left .item .image img {
+    height: 100vh !important;
+    -o-object-fit: initial !important;
+       object-fit: initial !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-choose-us .carousel-left .item .image img {
+    height: 100% !important;
+    -o-object-fit: initial !important;
+       object-fit: initial !important;
+  }
 }
 
 @media (max-width: 767px) {
