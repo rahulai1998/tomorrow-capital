@@ -6,8 +6,8 @@
    $headers = "From: kamblepramod806@gmail.com";
 
    if (mail($to_email, $subject, $body, $headers)) {
-      echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+      echo '<script>alert("Success")</script>';
    } else {
-     echo '<script>alert("Welcome to Geeks for Geeks")</script>';
+     echo '<script>alert("Failed")</script>';
    }
 ?>
