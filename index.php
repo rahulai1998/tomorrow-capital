@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 			</html>
 		";
 
-		$headers = 	'From: Contact Form <kamblepramod806@gmail.com>' . "\r\n" .
+		$headers = 	'From: Contact Form 'kamblepramod806@gmail.com' . "\r\n" .
     				"Reply-To: $email" . "\r\n" .
     				"MIME-Version: 1.0\r\n" . 
 					"Content-Type: text/html; charset=iso-8859-1\r\n";
