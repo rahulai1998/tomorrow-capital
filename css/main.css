@@ -511,7 +511,7 @@ button {
     height: calc(100vh - 90px);
   }
   .header .navbar .links.faint-bg {
-    background-color: #2a2d34 !important;
+    background-color: #24475d !important;
   }
   .header .navbar .links.faint-blue {
     background-color: #f2f6f8 !important;
@@ -2934,8 +2934,6 @@ button {
 
 .our-vision .content-wrapper::before {
   content: "";
-  background: #151515;
-  opacity: 0.85;
   mix-blend-mode: hard-light;
   position: absolute;
   top: 0;
