@@ -18,21 +18,21 @@ $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
-  autoplay:true,
-  autoplayTimeout:4000,
-  autoplayHoverPause:true,
-  slideTransition: 'linear',
+  autoplay: true,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
+  slideTransition: "linear",
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 1
+      items: 1,
     },
     1000: {
-      items: 1
-    }
-  }
+      items: 1,
+    },
+  },
 });
 
 function handleSayHi() {
@@ -89,7 +89,7 @@ function handleSupport() {
     "images/overall-support/build-team.png",
     "images/overall-support/brand-strategy.png",
     "images/overall-support/provide-network.png",
-    "images/overall-support/future-fund-raise.png"
+    "images/overall-support/future-fund-raise.png",
   ];
 
   const btns = document.querySelectorAll(".acc_ctrl");
@@ -116,7 +116,7 @@ function handleInvest() {
     "images/invest.png",
     "images/valuable-thoughts/card_1.png",
     "images/valuable-thoughts/card_2.png",
-    "images/valuable-thoughts/card_3.png"
+    "images/valuable-thoughts/card_3.png",
   ];
 
   const btns = document.querySelectorAll(".owl-dot");
@@ -136,6 +136,13 @@ window.onload = () => {
   handleSayHi();
   handleSupport();
 };
+
+var myvid = $("#video-id")[0];
+$(window).scroll(function () {
+  var scroll = $(this).scrollTop();
+  scroll > 500 ? myvid.pause() : myvid.play();
+});
+
 
 // $(".content-btn").on("click", function (e) {
 //   e.preventDefault();
@@ -172,4 +179,3 @@ window.onload = () => {
 //     icon.style.opacity = '1';
 //   }
 // });
-

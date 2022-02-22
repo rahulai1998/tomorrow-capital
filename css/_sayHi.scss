@@ -173,7 +173,7 @@
             width: 100% !important;
           }
         }
-        select{
+        select {
           width: 100%;
         }
         &-handle {
@@ -252,5 +252,12 @@
   padding-bottom: 5rem;
   @include breakpoint-up(lg) {
     padding-bottom: 8rem;
+  }
+}
+
+.contact-us-gap {
+  padding-top: 9rem;
+  @include breakpoint-up(md) {
+    padding-top: 10rem;
   }
 }

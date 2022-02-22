@@ -458,12 +458,19 @@ button {
   position: absolute;
 }
 
+.nav-up {
+  top: -110px;
+}
+
 .header {
   z-index: 40;
   overflow: hidden;
   color: #ffffff;
-  position: relative;
-  height: 11rem;
+  position: fixed;
+  height: 10rem;
+  width: 100%;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 
 @media (max-width: 767px) {
@@ -478,6 +485,14 @@ button {
 
 .header.bg-dark-color {
   background-color: #151515;
+}
+
+.header.faint-green {
+  background-color: #04353e !important;
+}
+
+.header.faint-gray {
+  background-color: #f2f6f8 !important;
 }
 
 .header .navbar {
@@ -511,13 +526,13 @@ button {
     height: calc(100vh - 90px);
   }
   .header .navbar .links.faint-bg {
-    background-color: #24475d !important;
+    background-color: #04353e !important;
   }
   .header .navbar .links.faint-blue {
     background-color: #f2f6f8 !important;
   }
   .header .navbar .links.has-white {
-    background-color: #ffff !important;
+    background-color: #f2f6f8 !important;
   }
 }
 
@@ -661,6 +676,18 @@ button {
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+@media (max-width: 767px) {
+  .is-hidden-mob {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .is-hidden-tab {
+    display: none !important;
+  }
 }
 
 .footer {
@@ -961,6 +988,7 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 9rem;
 }
 
 @media (min-width: 768px) {
@@ -970,6 +998,7 @@ button {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 0rem;
+    padding-top: 10rem;
   }
 }
 
@@ -2913,14 +2942,24 @@ button {
   }
 }
 
+.contact-us-gap {
+  padding-top: 9rem;
+}
+
+@media (min-width: 768px) {
+  .contact-us-gap {
+    padding-top: 10rem;
+  }
+}
+
 .our-vision .content-wrapper {
-  padding-top: 12rem;
+  padding-top: 10rem;
   position: relative;
 }
 
 @media (max-width: 767px) {
   .our-vision .content-wrapper {
-    padding-top: 11.8rem;
+    padding-top: 9rem;
   }
 }
 
@@ -3518,14 +3557,14 @@ button {
 }
 
 .our-team .content-wrapper {
-  padding-top: 13rem;
+  padding-top: 12rem;
   background-color: #f2f6f8;
   position: relative;
 }
 
 @media (min-width: 768px) {
   .our-team .content-wrapper {
-    padding-top: 17rem;
+    padding-top: 16rem;
   }
 }
 
@@ -4356,14 +4395,14 @@ button {
 }
 
 .our-companies .content-wrapper {
-  padding-top: 13rem;
+  padding-top: 12rem;
   background-color: #f2f6f8;
   position: relative;
 }
 
 @media (min-width: 768px) {
   .our-companies .content-wrapper {
-    padding-top: 15rem;
+    padding-top: 14rem;
   }
 }
 
@@ -4890,6 +4929,12 @@ button {
 @media (max-width: 767px) {
   .card-section .right-icon {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .companies-pages.is-bottom-gap-1 {
+    padding-bottom: 90px;
   }
 }
 

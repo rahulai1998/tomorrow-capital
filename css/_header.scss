@@ -6,12 +6,20 @@
     position: absolute;
   }
 }
+
+.nav-up {
+  top: -110px;
+}
+
 .header {
   z-index: 40;
   overflow: hidden;
   color: $white;
-  position: relative;
-  height: 11rem;
+  position: fixed;
+  height: 10rem;
+  width: 100%;
+  transition: top 0.2s ease-in-out;
+
   @include breakpoint-down(md) {
     height: 9rem;
   }
@@ -21,6 +29,13 @@
   &.bg-dark-color {
     background-color: $primary-black;
   }
+  &.faint-green {
+    background-color: #04353e !important;
+  }
+  &.faint-gray {
+    background-color: #f2f6f8 !important;
+  }
+  
   .navbar {
     height: 100%;
     position: relative;
@@ -40,13 +55,13 @@
         transition: 0.3s;
         height: calc(100vh - 90px);
         &.faint-bg {
-          background-color: #24475d !important;
+          background-color: #04353e !important;
         }
         &.faint-blue {
           background-color: #f2f6f8 !important;
         }
         &.has-white {
-          background-color: #ffff !important;
+          background-color: #f2f6f8 !important;
         }
       }
 
@@ -155,5 +170,17 @@
   img {
     height: 100%;
     object-fit: fill;
+  }
+}
+
+.is-hidden-mob {
+  @include breakpoint-down(md) {
+    display: none !important;
+  }
+}
+
+.is-hidden-tab {
+  @include breakpoint-up(md) {
+    display: none !important;
   }
 }

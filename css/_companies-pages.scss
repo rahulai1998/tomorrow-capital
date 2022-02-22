@@ -1,4 +1,9 @@
 .companies-pages {
+  &.is-bottom-gap-1{
+    @include breakpoint-down(md) {
+      padding-bottom: 90px;
+    }
+  }
   .section-bg-img {
     width: 100%;
     height: calc(100vh - 100px);
