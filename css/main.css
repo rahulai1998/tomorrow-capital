@@ -2244,7 +2244,7 @@ button {
 
 @media (min-width: 1920px) {
   .invest_template .carousel {
-    padding-top: 16rem;
+    padding-top: 17rem;
     padding-bottom: 16rem;
   }
 }
@@ -3042,8 +3042,8 @@ button {
 @media (min-width: 1024px) {
   .our-vision .content-wrapper .banner-content h1 {
     font-size: 5rem;
-    padding-bottom: 4rem;
-    padding-top: 8rem;
+    padding-bottom: 5rem;
+    padding-top: 9rem;
   }
 }
 
@@ -3564,7 +3564,7 @@ button {
 
 @media (min-width: 768px) {
   .our-team .content-wrapper {
-    padding-top: 16rem;
+    padding-top: 17rem;
   }
 }
 
