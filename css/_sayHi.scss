@@ -163,6 +163,7 @@
           padding: 0.8rem 0;
           outline: none;
           font-size: 1.8rem;
+          background: #fff !important;
           @include breakpoint-down(md) {
             padding: 0.8rem 0;
             margin-bottom: 4rem;
