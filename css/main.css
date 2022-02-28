@@ -56,6 +56,10 @@ button {
   position: fixed;
 }
 
+select {
+  background: #fff;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 1.6rem;
